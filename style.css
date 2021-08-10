@@ -126,6 +126,7 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	color: #fff;
+	font-family: 'Poppins', sans-serif;
 }
 #menuBtn {
 	width: 50px;
