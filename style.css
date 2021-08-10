@@ -1,55 +1,38 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 }
-/* header
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: block;
-  justify-content: space-between;
-  align-items: center;
-}
-header .logo
-{
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-} */
+
 #banner
 {
   position: relative;
-  right: 0;
-  top: 0;
+  right: 0; 
+  top: 0; 
   width: 100%;
-  padding: 50px 0;
-  /* display: flex;
-  flex-wrap: nowrap;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
-  /* background: #1c6cb0; */
+  align-items: center; 
+  background: #1c6cb0;
   transition: 0.5s;
   z-index:2;
 }
+/* #banner.active {
+	right: 300px;
+} */
 #banner video
 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   opacity: 0.8;
 }
-.banner-header {
-	background: chartreuse;
-	z-index: 3;
-}
+
 .logo {
 	height: 50px;
 	width: auto;
@@ -83,6 +66,8 @@ header .logo
   font-weight: 400;
   max-width: 700px;
 }
+
+/*----dont---*/
 .menu
 {
   position: absolute;
@@ -150,26 +135,23 @@ nav ul li a {
 
 @media screen and (max-width: 767px) {
 	#banner {
-		height: 15vh;
+		/* height: 15vh; */
 	}
 	.banner-text h1 {
 		font-size: 44px;
 	}
-	#banner video {
-		width: 100%;
-		height: auto;
-	}
+
 
 }
 @media screen and (min-width: 768px)
 {
 	#banner {
-		height: 35vh;
+		/* height: 35vh; */
 	}
 }
 @media screen and (min-width: 1025px){
 	#banner {
-		height: 100vh;
+		/* height: 100vh; */
 	}
 }
 
