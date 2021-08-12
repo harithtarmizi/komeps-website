@@ -1,10 +1,17 @@
-@import url('http://fonts.cdnfonts.com/css/din-alternate');
+/* @import url('http://fonts.cdnfonts.com/css/din-alternate'); */
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+@font-face {
+    font-family: 'DIN Alternate';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DIN Alternate'), url('https://fonts.cdnfonts.com/s/14503/DINAlternate-Bold.woff') format('woff');
+}
+
 #banner
 {
   position: relative;
@@ -192,6 +199,18 @@ nav ul li a {
 	}
 }
 @media screen and (min-width: 768px) {
+	#banner {
+		width: 100%;
+		padding: 40px 0;
+		background: linear-gradient(rgba(0,0,0,0.5), #1c6cb0) ,url('images/bghome.png');
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#banner video {
+		display: none;
+	}
 	.banner-header .logo {
 		margin-left: 37%;
 	}
@@ -205,8 +224,25 @@ nav ul li a {
 }
 
 @media screen and (min-width: 1025px){
+    #banner {
+         position: relative;
+         right: 0; 
+         top: 0; 
+         width: 100%;
+         min-height: 100vh;
+         padding: 10px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center; 
+         background: #1c6cb0;
+         transition: 0.5s;
+         z-index:2;
+    }
+	#banner video {
+		display: block;
+	}
 	.banner-header .logo {
-		margin-left: 45%;
+		margin-left: 43%;
 	}
 	.text {
 		right: 0;
@@ -269,11 +305,17 @@ nav ul li a {
 	}
 }
 @media screen and (min-width: 768px) {
+	#company {
+		background-attachment: scroll;
+	}
 	.about {
 		padding: 10%
 	}
 }
 @media screen and (min-width: 1025px) {
+	#company {
+		background-attachment: fixed;
+	}
 	.about {
 		padding-left: 15%;
 		padding-right: 15%;
